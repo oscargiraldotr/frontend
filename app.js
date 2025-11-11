@@ -1,4 +1,4 @@
-const API_BASE = 'http://localhost:3000'; // <- cambiar por la URL de Render o localhost:4000/api
+const API_BASE = 'https://backend-xs4r.onrender.com'; // <- cambiar por la URL de Render o localhost:4000/api
 
 // --- Helper ---
 function setToken(token) { localStorage.setItem('token', token); }
