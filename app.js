@@ -35,7 +35,7 @@ if (document.querySelector('#btn-login')) {
       const data = await res.json();
       if(!res.ok) return showMsg(data.error || 'Error registro');
       setToken(data.token);
-      location.href = '/frontend/dashboard.html';
+      location.href = '/dashboard.html';
     } catch (err) { showMsg('Error de red'); }
   });
 
@@ -51,7 +51,7 @@ if (document.querySelector('#btn-login')) {
       const data = await res.json();
       if(!res.ok) return showMsg(data.error || 'Credenciales inválidas');
       setToken(data.token);
-      location.href = '/frontend/dashboard.html';
+      location.href = '/dashboard.html';
     } catch (err) { showMsg('Error de red'); }
   });
 }
